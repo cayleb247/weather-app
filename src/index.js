@@ -45,10 +45,10 @@ function populateDayData(response) {
 }
 
 function populateHourData(response) {
-    const hourElements = document.querySelectorAll(".forecast-hour");
+    const hourTempText = document.querySelectorAll(".hour-temp");
     const hourData = response.days[0].hours;
     for (let i=0; i<24; i++) {
-        hourElements[i].firstChild.textContent = "hi";;
+        hourTempText[i].textContent = hourData[i].temp;
     }
 }
 
@@ -59,6 +59,7 @@ function displayError() {
 function populateData(response) {
     populateLocationText(response);
     populateDayData(response);
+    populateHourData(response);
 }
 
 locationForm.addEventListener("submit", (event) => {
