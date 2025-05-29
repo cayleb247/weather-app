@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="content">
+      <svg
+        class="unit-button"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-thermometer"
+      >
+        <path
+          d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"
+        ></path>
+      </svg>
+      <div class="search-grid">
+        <form action="#">
+          <label for="location">Location</label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="enter city name"
+          />
+        </form>
+      </div>
+      <div class="data-grid">
+        <div class="data-container">
+          <div class="data-left">
+            <div class="location-text">
+              <h1>New York</h1>
+              <h3>NY, United States</h3>
+            </div>
+            <div class="temp-text">
+              <h1>--</h1>
+              <p>Fahrenheit</p>
+            </div>
+            <div class="details-container">
+              <h3 class="conditions"></h3>
+              <div class="high-low">
+                <p class="low">--</p>
+                <p class="high">--</p>
+              </div>
+              <div class="minor-details-container">
+                <div class="humidity-uv">
+                  <div class="humidity">
+                    <p>Humidity</p>
+                    <h3 class="humid-stat">--</h3>
+                  </div>
+                  <div class="uv-index">
+                    <p>UV Index</p>
+                    <h3 class="uv-stat">--</h3>
+                  </div>
+                </div>
+
+                <div class="precipitation">
+                  <p>Precipitation</p>
+                  <h3>--</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-right">
+            <h2>Hourly Forecast</h2>
+            <div class="forecast-hours">
+              <div class="forecast-hour">
+                <p class="hour-text">0:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">1:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">2:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">3:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">4:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">5:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">6:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">7:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">8:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">9:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">10:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">11:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">12:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">13:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">14:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">15:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">16:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">17:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">18:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">19:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">20:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">21:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">22:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+              <div class="forecast-hour">
+                <p class="hour-text">23:00</p>
+                <div class="weather-icon-hour">--</div>
+                <p class="hour-temp">--</p>
+              </div>
+            </div>
+            <h2>Week Forecast</h2>
+            <div class="forecast-week">
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+              <div class="forecast-day">
+                <h3 class="date-text">--</h3>
+                <div class="weather-icon-day">
+                  
+                </div>
+                <h1 class="day-temp-text">--</h1>
+                <div class="high-low">
+                  <p class="low">--</p>
+                  <p class="high">--</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
